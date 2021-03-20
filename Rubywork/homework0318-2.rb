@@ -1,16 +1,21 @@
-def remove_extra_number(list, n)
-  list = list.sort
+def remove_extra_number(list, n) 
   if n == 0
-    return list.uniq
-  else n > 0 
-    Array.new << list.uniq.each
+    list.uniq
+  else
+    newarr = []
+    list.each {|x| newarr << x if newarr.count(x) < n}
+    newarr
   end
 end
-
-
-
 p remove_extra_number([1, 1, 1, 1], 1)           # 印出 [1]
 p remove_extra_number([1, 1, 1, 1], 2)           # 印出 [1, 1]
 p remove_extra_number([20, 37, 20, 21], 1)       # 印出 [20, 37, 21]
 p remove_extra_number([1, 2, 3, 1, 2, 2, 2], 2)  # 印出 [1, 2, 3, 1, 2]
-p remove_extra_number([1, 2, 3, 4], 0)           # 印出 [1, 2, 3, 4]
+p remove_extra_number([1, 2, 3, 4], 0)           # 印出 [1, 2, 3, 4] 
+#真的不要怕問,也不要鑽牛角尖,不會解不是笨也不是比別人差,多看多聽多記在心裡,熟練了就是自己的.
+#後來發現自己的解法跟維鴻同學的根本一樣(我抄襲XD),解出來了是開心,但仔細想一下,這是在做蠢事,維鴻及其他同學已經解出來了,為什麼週四不直接問清楚別人的思路,當下也處理完這題,多浪費時間,同學也跑更遠了.
+#不會的看答案練習十次,也是比解出後不練習來得強呀!
+
+#這題最後想到的解法是,從陣列中將每個元素從頭到尾,一個一個放到一個新陣列,規則是不能超過指定次數(n)
+#而舊陣列中沒有後,也就不用再去理他了(例如第四項[1 ,2 ,3 ,1 ,2 ,2 ,2]中的3).所以如果沒有多練習,多看多學,怎麼可能可以像熟手一樣看題目就大概知道方向?
+
