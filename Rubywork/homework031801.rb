@@ -1,6 +1,3 @@
-
-  
-
 def number_root(n) 
   while n > 10
     n = n.digits.sum
