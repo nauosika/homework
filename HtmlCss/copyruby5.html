@@ -5,312 +5,77 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <style>
-      * {
-        margin: 0;
-        padding: 0;
-      }
-
-      .flex {
-        width: 1400px;
-        margin: auto;
-        display: flex;
-        flex-wrap: wrap;
-        border: 1px red solid;
-      }
-      .alwaysup {
-        width: 1398px;
-        height: 100px;
-        margin: 0;
-
-        background-color: rgb(18, 102, 180);
-        border: 1px red solid;
-      }
-      .ind {
-      }
-      .item1 {
-        width: 1398px;
-        margin: auto;
-        height: 500px;
-        background-image: url(https://fakeimg.pl/1398x500/C00CCC);
-        background-image: ;
-      }
-      .item1 p,
-      .item1 button {
-        margin-left: 150px;
-      }
-      .oneone {
-        font-size: 80px;
-        margin-top: 60px;
-        color: white;
-      }
-      .onetwo {
-        font-size: 40px;
-        margin-top: 0px;
-        color: white;
-      }
-      .item2 {
-        width: 1400px;
-        margin: auto;
-        margin-top: 0;
-        margin-bottom: 0;
-        height: 100px;
-        border: 1px red solid;
-      }
-      .item2 p {
-        text-align: center;
-      }
-      .item3,
-      .item4,
-      .item5 {
-        width: 250px;
-        height: 300px;
-        margin: 90px;
-        margin-top: 50px;
-        margin-bottom: 0px;
-      }
-      .item3 img,
-      .item4 img,
-      .item5 img {
-        width: 100%;
-      }
-      .item3 p,
-      .item4 p,
-      .item5 p {
-        text-align: center;
-      }
-      .item3 h3,
-      .item4 h3,
-      .item5 h3 {
-        text-align: center;
-      }
-      .item6 {
-        margin-top: 0;
-        margin-left: 250px;
-        margin-right: 250px;
-        width: 898px;
-        height: 80px;
-        border: 1px red solid;
-        position: relative;
-      }
-
-      .item6 div {
-        position: absolute;
-        bottom: 0;
-      }
-      .item7 {
-        width: 848px;
-        height: 500px;
-        margin: 0 275px;
-        border: 1px red solid;
-        display: flex;
-      }
-      .item71 {
-        width: 244px;
-        margin: auto;
-        margin-right: 0;
-        border: 1px red solid;
-        height: 450px;
-      }
-      .item72 {
-        width: 500px;
-        margin: auto;
-        margin-left: 0;
-        border: 1px red solid;
-        height: 450px;
-      }
-      .item8 {
-        width: 1398px;
-        height: 500px;
-        margin: 0px;
-        border: 1px red solid;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .item81,
-      .item82 {
-        border: 1px rgb(24, 11, 11) solid;
-        height: 498px;
-        width: 697px;
-        margin: auto;
-      }
-      .item9 {
-        width: 1398px;
-        height: 450px;
-        margin: 0px;
-        border: 1px rgb(47, 20, 20) solid;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .item91 {
-        font-size: 28px;
-        border: 1px rgb(47, 20, 20) solid;
-        height: 40px;
-        width: 1332px;
-        margin: 0 auto;
-      }
-      .item92,
-      .item93,
-      .item94 {
-        border: 1px rgb(69, 121, 20) solid;
-        width: 400px;
-        height: 366px;
-        margin: 0 auto;
-      }
-      .item95 {
-        border: 1px rgb(69, 121, 20) solid;
-        height: 40px;
-        width: 1200px;
-        margin: 0 auto;
-        text-align: center;
-        align-items: center;
-      }
-      .item10 {
-        width: 1398px;
-        height: 513px;
-        margin: 0px;
-        border: 1px red solid;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .item101 {
-        width: 1332px;
-        height: 143px;
-        border: 1px red solid;
-        margin: 0 auto;
-      }
-      .item101 p {
-        margin: 10px auto 10px 0;
-      }
-      .item102,
-      .item103,
-      .item104 {
-        border: 1px rgb(69, 121, 20) solid;
-        width: 400px;
-        height: 366px;
-        margin: 0 auto;
-      }
-      .item11 {
-        width: 1398px;
-        height: 600px;
-        margin: 0px;
-        border: 1px red solid;
-        display: flex;
-        flex-wrap: wrap;
-      }
-      .item1101 {
-        width: 1396px;
-        height: 148px;
-        border: 1px red solid;
-        margin: 0px auto;
-        margin-top: 90px;
-      }
-      .item1102 {
-        width: 1396px;
-        height: 358px;
-        border: 1px rgb(77, 54, 54) solid;
-        margin: 0px auto;
-      }
-      .item12 {
-        width: 498px;
-        height: 498px;
-        margin: 0px;
-        border: 1px rgb(17, 5, 5) solid;
-      }
-      .item13 {
-        inset-inline: ;
-        width: 898px;
-        height: 498px;
-        margin: 0px;
-        border: 1px rgb(17, 5, 5) solid;
-      }
-
-      .item14 {
-        inset-inline: ;
-        width: 1398px;
-        height: 98px;
-        margin: 0px;
-        border: 1px rgb(17, 5, 5) solid;
-      }
-      .item15 {
-        inset-inline: ;
-        width: 1398px;
-        height: 98px;
-        margin: 0px;
-        border: 1px rgb(17, 5, 5) solid;
-      }
-    </style>
+    <link rel="stylesheet" href="copy.css" />
   </head>
   <body>
     <div class="flex up">
       <div class="alwaysup">
-        <p>上方導覽列</p>
+        <p></p>
       </div>
       <div class="ind item1">
-        <p class="oneone">科科科科科科20倍</p>
-        <p class="onetwo">就是練習練習練習再練習</p>
+        <p class="oneone"></p>
+        <p class="onetwo"></p>
         <br />
-        <button type="submit">請不要按我</button>
+        <button type="submit"></button>
       </div>
       <div class="ind item2">
-        <p style="font-size: 40px">我負責吃魚</p>
+        <p style="font-size: 40px"></p>
         <br />
-        <p>不吐魚骨頭</p>
+        <p></p>
       </div>
       <div class="ind item3">
-        <img src="timg.jpg" alt="" />
-        <h3>你看到什麼?</h3>
-        <p>我是一隻貓我是一隻貓我是一隻貓</p>
-        <p>我是一隻貓我是一隻貓</p>
+        <img src="" alt="" />
+        <h3></h3>
+        <p></p>
+        <p></p>
       </div>
       <div class="ind item4">
-        <img src="timg.jpg" alt="" />
-        <h3>你看到什麼?</h3>
-        <p>我是一隻貓我是一隻貓</p>
-        <p>我是一隻貓我是一隻貓我是一隻貓</p>
+        <img src="" alt="" />
+        <h3></h3>
+        <p></p>
+        <p></p>
       </div>
       <div class="ind item5">
-        <img src="timg.jpg" alt="" />
-        <h3>你看到什麼?</h3>
-        <p>我是一隻貓我是一隻貓我是一隻貓</p>
-        <p>我是一隻貓我是一隻貓</p>
+        <img src="" alt="" />
+        <h3></h3>
+        <p></p>
+        <p></p>
       </div>
       <div class="ind item6">
         <div>
-          <h3>黑貓是好貓</h3>
-          <p>白貓也是好貓</p>
+          <h3></h3>
+          <p></p>
         </div>
       </div>
       <div class="ind item7">
-        <div class="item71">左</div>
-        <div class="item72">右</div>
+        <div class="item71"></div>
+        <div class="item72"></div>
       </div>
       <div class="ind item8">
-        <div class="item81">左</div>
-        <div class="item82">右</div>
+        <div class="item81"></div>
+        <div class="item82"></div>
       </div>
       <div class="ind item9">
-        <div class="item91">我堅強富國</div>
-        <div class="item92">1</div>
-        <div class="item93">2</div>
-        <div class="item94">3</div>
-        <div class="item95">我是一顆按鈕</div>
+        <div class="item91"></div>
+        <div class="item92"></div>
+        <div class="item93"></div>
+        <div class="item94"></div>
+        <div class="item95"></div>
       </div>
       <div class="ind item10">
         <div class="item101">
           <p style="font-size: 35px">
-            <span style="text-decoration-line: underline">掌握</span
-            >掌握掌握掌握掌握掌握
+            <span style="text-decoration-line: underline"></span>
           </p>
-          <p>針對不同的....</p>
+          <p></p>
         </div>
-        <div class="item102">左</div>
-        <div class="item103">中</div>
-        <div class="item104">右</div>
+        <div class="item102"></div>
+        <div class="item103"></div>
+        <div class="item104"></div>
       </div>
       <div class="ind item11">
-        <div class="item1101">一起超越20倍</div>
-        <div class="item1102">多多幻燈片</div>
+        <div class="item1101"></div>
+        <div class="item1102"></div>
       </div>
       <div class="ind item12"></div>
       <div class="ind item13"></div>
