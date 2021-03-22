@@ -1,0 +1,10 @@
+變數 Variable  變數無形態,是用來給予一個我們要使用的對象給予標籤.
+例如 x = 2 ,二這個物件現在被給予x這個標籤 當我們用  puts x  => 2
+
+常數 Constant 在ruby的語言中,常數與變數的差異便是,第一個子母是大寫.ruby中,常數可被修改.
+def用變數, class,module用常數
+
+區域變數  username
+全域變數  $username
+實體變數(instance variable)  @username  給實體內可自由取用的變數
+類別變數  @@username  給類別用的變數
