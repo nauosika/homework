@@ -13,6 +13,7 @@
   border: 1px black solid;
   display: flex;
   margin: auto;
+  position: fixed;
 }
 .upleft {
   width: 300px;
@@ -48,14 +49,15 @@
   margin: 0 auto 20px 100px;
 }
 .item1_1 {
-  margin-top: 60px;
+  margin-top: 150px;
 }
 .item1_3 {
   margin-top: 40px;
-  margin-bottom: 10px;
+  margin-bottom: 40px;
 }
 .item2 {
   width: 1198px;
+  height: 100px;
 }
 .item2 img {
   width: 100%;
