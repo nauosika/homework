@@ -1,0 +1,203 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.box {
+  margin: 100px auto;
+  width: 1200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box1,
+.box2,
+.box3,
+.box4 {
+  width: 900px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: auto;
+  color: whitesmoke;
+}
+.box11,
+.box21,
+.box31,
+.box41 {
+  width: 330px;
+  height: 350px;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+}
+.box11 h2,
+.box21 h2,
+.box31 h2,
+.box41 h2 {
+  margin: 20px auto 0;
+  margin-left: 20px;
+  font-size: 30px;
+  line-height: 35px;
+}
+.box11 p,
+.box21 p,
+.box31 p,
+.box41 p {
+  margin: auto;
+  margin-top: 10px;
+  margin-left: 20px;
+  font-size: 20px;
+  line-height: 26px;
+  letter-spacing: 3px;
+}
+.box12,
+.box32 {
+  width: 400px;
+  height: 280px;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+.box22,
+.box42 {
+  width: 500px;
+  height: 350px;
+  background-color: rgba(200, 200, 200, 0.2);
+}
+.box13,
+.box23,
+.box33,
+.box43 {
+  width: 650px;
+  height: 350px;
+  background-color: chocolate;
+}
+.box14,
+.box24,
+.box34,
+.box44 {
+  width: 650px;
+  height: 280px;
+  background-color: darkblue;
+}
+.box15,
+.box25,
+.box35,
+.box45 {
+  width: 80px;
+  height: 50px;
+  background-color: red;
+}
+/* 四大區塊五小塊先畫 */
+.box11 {
+  position: relative;
+  z-index: 3;
+}
+.box12 {
+  position: relative;
+  left: 170px;
+  top: 50px;
+  z-index: 1;
+}
+.box13 {
+  position: relative;
+  bottom: 200px;
+  left: 200px;
+  z-index: 2;
+}
+.box14 {
+  position: relative;
+  z-index: 3;
+  bottom: 250px;
+  left: 50px;
+}
+.box15 {
+  position: relative;
+  z-index: 3;
+  bottom: 400px;
+  left: 150px;
+}
+/* 第一區塊 */
+.box21 {
+  position: relative;
+  z-index: 3;
+  left: 570px;
+}
+.box22 {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: 100px;
+}
+.box23 {
+  position: relative;
+  z-index: 2;
+  bottom: 200px;
+}
+.box24 {
+  position: relative;
+  z-index: 3;
+  bottom: 250px;
+  left: 250px;
+}
+.box25 {
+  position: relative;
+  z-index: 3;
+  bottom: 400px;
+  right: 680px;
+}
+/* 第二區塊 */
+.box31 {
+  position: relative;
+  z-index: 3;
+}
+.box32 {
+  position: relative;
+  z-index: 1;
+  left: 170px;
+  top: 50px;
+}
+.box33 {
+  position: relative;
+  bottom: 200px;
+  left: 200px;
+  z-index: 2;
+}
+.box34 {
+  position: relative;
+  z-index: 3;
+  bottom: 250px;
+  left: 50px;
+}
+.box35 {
+  position: relative;
+  z-index: 3;
+  bottom: 400px;
+  left: 150px;
+}
+/* 第三區塊 */
+.box41 {
+  position: relative;
+  z-index: 3;
+  left: 570px;
+}
+.box42 {
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  right: 100px;
+}
+.box43 {
+  position: relative;
+  z-index: 2;
+  bottom: 200px;
+}
+.box44 {
+  position: relative;
+  z-index: 3;
+  bottom: 250px;
+  left: 250px;
+}
+.box45 {
+  position: relative;
+  z-index: 3;
+  bottom: 400px;
+  right: 680px;
+}
+/* 其實1,3跟2,4這兩個排列方式一樣..... */

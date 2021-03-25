@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      /* body {
+        position: relative;
+      } */
+      .box {
+        width: 1000px;
+        /* height: 1000px; */
+        margin: 100px auto;
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+      }
+      .pi1 {
+        width: 350px;
+        height: 400px;
+        background-color: black;
+        position: relative;
+        top: -60px;
+        left: -60px;
+        z-index: 3;
+        font-size: 0;
+      }
+      .pi1 img {
+        width: 100%;
+      }
+      .pi1 h3 {
+        margin: 20px 20px;
+        font-size: 30px;
+        line-height: 50px;
+        color: white;
+      }
+      .pi1 p {
+        margin: 20px 20px;
+        font-size: 16px;
+        line-height: 30px;
+        color: white;
+      }
+      .pi2 {
+        width: 400px;
+        height: 300px;
+        background-color: rgba(200, 200, 200, 0.5);
+        position: relative;
+        z-index: 1;
+        top: 0px;
+        left: 250px;
+      }
+      .pi3 {
+        width: 750px;
+        height: 400px;
+        background-color: brown;
+        position: relative;
+        z-index: 2;
+        bottom: 300px;
+        left: 150px;
+      }
+      .pi3 img {
+        width: 100%;
+        height: 100%;
+      }
+      .pi4 {
+        width: 650px;
+        height: 300px;
+        background-color: wheat;
+        position: relative;
+        z-index: 3;
+        bottom: 400px;
+        display: flex;
+        flex-direction: column;
+      }
+      .pi4 h3,
+      .pi4 h4,
+      .pi4 p,
+      .pi4 li {
+        font-size: 24px;
+        line-height: 34px;
+        margin: auto;
+        margin-left: 20px;
+      }
+      .pi4 h3 {
+        margin-top: 20px;
+        margin-bottom: 5px;
+        font-size: 20px;
+        color: red;
+      }
+      .pi4 h3::after {
+        content: "";
+        display: inline-block;
+        width: 400px;
+        border: 1px brown solid;
+        align-items: center;
+        position: relative;
+        bottom: 5px;
+      }
+      .pi4 h4 {
+        display: inline-block;
+        background-color: yellowgreen;
+      }
+      .pi5 {
+        width: 80px;
+        height: 50px;
+        background-color: darkgreen;
+        position: absolute;
+        z-index: 4;
+        right: 80px;
+        top: 280px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      .pi5 div {
+        margin: 0;
+        margin-left: 30px;
+        padding: 0;
+        border-top: transparent 20px solid;
+        border-bottom: transparent 20px solid;
+        border-right: transparent 20px solid;
+        border-left: tomato 20px solid;
+      }
+      .pi4 > li {
+        color: brown;
+      }
+      .pi4 li > span {
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="box">
+      <div class="pi1">
+        <img src="https://picsum.photos/300/136/?random=1" />
+        <h3>買車賣車買車賣車</h3>
+        <p>
+          部門平靜你好，不過裡面，警察網站中學全球以下工程再也，法國。
+          萬華雲林予以數碼相機，資料庫每個就有西。
+        </p>
+      </div>
+      <div class="pi2">2</div>
+      <div class="pi3">
+        <img src="https://picsum.photos/750/400/?random=1" />
+      </div>
+      <div class="pi4">
+        <h3>買車買車買車賣車</h3>
+        <h4>低重心</h4>
+        <li><span>阿摩斯指定，機器選手，城市製造體內，有。</span></li>
+        <h4>低重心</h4>
+        <li>
+          <span
+            >阿摩斯指定，機器選手，城市製造體內，有。阿摩斯指定，機器選手，城市製造體內，有。</span
+          >
+        </li>
+        <h4>低重心</h4>
+        <li><span>阿摩斯指定，機器選手，城市製造體內，有。</span></li>
+      </div>
+      <div class="pi5"><div></div></div>
+    </div>
+  </body>
+</html>
