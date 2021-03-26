@@ -68,13 +68,54 @@
   height: 350px;
   background-color: chocolate;
 }
+.box13 img,
+.box23 img,
+.box33 img,
+.box43 img {
+  width: 100%;
+  height: 100%;
+}
 .box14,
 .box24,
 .box34,
 .box44 {
   width: 650px;
   height: 280px;
-  background-color: darkblue;
+  background-color: #bbb;
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 3px;
+  line-height: 26px;
+}
+.box14 h3,
+.box24 h3,
+.box34 h3,
+.box44 h3 {
+  margin: 20px auto 0 30px;
+  font-size: 20px;
+  color: red;
+}
+.box14 h3::after,
+.box24 h3::after,
+.box34 h3::after,
+.box44 h3::after {
+  content: "";
+  border: 2px red solid;
+  display: inline-block;
+  width: 350px;
+  position: relative;
+  bottom: 5px;
+}
+.box14 h4,
+.box24 h4,
+.box34 h4,
+.box44 h4 {
+  margin: 5px auto 5px 30px;
+  display: block;
+  background-color: black;
+  color: white;
 }
 .box15,
 .box25,
@@ -83,7 +124,39 @@
   width: 80px;
   height: 50px;
   background-color: red;
+  display: flex;
 }
+.box15 div,
+.box25 div,
+.box35 div,
+.box45 div {
+  count: "";
+  display: flex;
+  width: 40px;
+  margin: auto;
+  margin-left: 30px;
+  border-bottom: 15px transparent solid;
+  border-left: 30px white solid;
+  border-top: 15px transparent solid;
+  border-right: 15px transparent solid;
+}
+
+.box14 li,
+.box24 li,
+.box34 li,
+.box44 li {
+  color: red;
+  margin: 0px auto 0px 40px;
+}
+.box14 li > span,
+.box24 li > span,
+.box34 li > span,
+.box44 li > span {
+  color: black;
+  position: relative;
+  right: 10px;
+}
+
 /* 四大區塊五小塊先畫 */
 .box11 {
   position: relative;
@@ -201,3 +274,82 @@
   right: 680px;
 }
 /* 其實1,3跟2,4這兩個排列方式一樣..... */
+
+.flex {
+  width: 1100px;
+  margin: auto;
+  border: 1px black solid;
+  position: relative;
+  z-index: 4;
+  bottom: 200px;
+  display: flex;
+  flex-wrap: wrap;
+}
+.goodshoder {
+  margin: auto;
+  width: 200px;
+  height: 300px;
+}
+.goods {
+  margin: auto;
+  width: 200px;
+  height: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+.goods img {
+  width: 200px;
+  height: 160px;
+}
+.intro {
+  font-size: 10px;
+  width: 178px;
+  height: 100px;
+  margin: auto;
+  letter-spacing: 5px;
+}
+.quan {
+  font-size: 10px;
+  font-weight: normal;
+  margin: auto 10px;
+}
+.goods::before {
+  content: "6";
+  font-size: 16px;
+  position: absolute;
+  right: 20px;
+  top: 5px;
+}
+.goods::after {
+  content: "";
+  font-size: 10px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  margin: 0;
+  padding: 0;
+  border-top: rgba(243, 243, 26, 0.6) 22px solid;
+  border-bottom: transparent 22px solid;
+  border-right: rgba(243, 243, 26, 0.6) 20px solid;
+  border-left: rgba(243, 243, 26, 0.6) 20px solid;
+}
+.goods:hover {
+  border: 1px tomato solid;
+  position: relative;
+  top: -5px;
+  z-index: 1;
+}
+.goodshoder:hover::after {
+  content: "找寵物";
+  background-color: tomato;
+  font-size: 20px;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 auto;
+  display: block;
+  top: -5px;
+  width: 200px;
+  border: tomato 1px solid;
+}
