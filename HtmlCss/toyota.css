@@ -18,6 +18,7 @@
   margin: auto;
   color: whitesmoke;
 }
+
 .box11,
 .box21,
 .box31,
@@ -36,6 +37,33 @@
   margin-left: 20px;
   font-size: 30px;
   line-height: 35px;
+}
+.box11 > div,
+.box21 > div,
+.box31 > div,
+.box41 > div {
+  width: 330px;
+  height: 150px;
+  background-color: brown;
+  display: flex;
+}
+.keep {
+  font-size: 40px;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+.tarn {
+  margin: 0;
+  width: 150px;
+  /* height: 150px; */
+  display: block;
+  transform: rotate(90deg);
+  font-size: 120px;
+  line-height: 130px;
+  font-weight: 100;
+  align-items: center;
+  text-align: center;
 }
 .box11 p,
 .box21 p,
@@ -82,8 +110,8 @@
   width: 650px;
   height: 280px;
   background-color: #bbb;
-  display: flex;
-  flex-direction: column;
+  /* display: flex;
+  flex-direction: column; */
   font-weight: 700;
   font-size: 20px;
   letter-spacing: 3px;
@@ -113,10 +141,45 @@
 .box34 h4,
 .box44 h4 {
   margin: 5px auto 5px 30px;
-  display: block;
+  display: inline-block;
   background-color: black;
   color: white;
 }
+.box14 div,
+.box24 div,
+.box34 div,
+.box44 div {
+  margin: auto;
+  margin-left: 45px;
+  color: black;
+}
+.box14 div::before,
+.box24 div::before,
+.box34 div::before,
+.box44 div::before {
+  content: "";
+  border: 5px red solid;
+  border-radius: 50%;
+  position: absolute;
+  left: 30px;
+  margin: 8px 0px;
+}
+/* .box14 li,
+.box24 li,
+.box34 li,
+.box44 li {
+  color: red;
+  margin: 0px auto 0px 40px;
+}
+.box14 li > div,
+.box24 li > div,
+.box34 li > div,
+.box44 li > div {
+  height: 36px;
+  color: black;
+  position: relative;
+  right: 10px;
+} */
 .box15,
 .box25,
 .box35,
@@ -139,22 +202,6 @@
   border-left: 30px white solid;
   border-top: 15px transparent solid;
   border-right: 15px transparent solid;
-}
-
-.box14 li,
-.box24 li,
-.box34 li,
-.box44 li {
-  color: red;
-  margin: 0px auto 0px 40px;
-}
-.box14 li > span,
-.box24 li > span,
-.box34 li > span,
-.box44 li > span {
-  color: black;
-  position: relative;
-  right: 10px;
 }
 
 /* 四大區塊五小塊先畫 */
