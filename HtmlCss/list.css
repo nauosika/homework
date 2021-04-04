@@ -54,7 +54,7 @@ ul {
 .can_touch:hover > .submenu {
   display: block;
   /* outline: 1px yellow solid; */
-  width: 180px;
+  width: 180px; 
 }
 .can_touch2:hover .submenu2 {
   display: block;

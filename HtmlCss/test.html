@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    .box {
+      max-width: 1200px;
+      height: 200px;
+      margin: 100px auto;
+      background-color: gray;
+      display: flex;
+      position: relative;
+    }
+
+    .p {
+      margin-left: 100px ;
+    }
+    img {
+      width: 100%;
+    }
+    .t {
+      font-size: 100px;
+      margin: auto;
+      margin-left: 10px;
+    }
+    .l {
+      width: 200px;
+      margin-right: 40px;
+    }
+    ul li {
+      /* display: block; */
+      margin: 15%;
+      
+    }
+    .l ul .line::after {
+      content: "";
+      display: inline-block;
+      width: 150px;
+      height: 1px;
+      background-color: black;
+    }
+    .hidd{
+      position: absolute;
+      left: 100px;
+      top: 200px;
+      width: 400px;
+      background-color: yellowgreen;
+      align-items: center;
+      font-size: 70px;
+      display: none;
+    }
+
+    .testline:hover .hidd {
+      display: block;
+    }
+
+    .a1024 {
+      display: none;
+      position: absolute;
+    }
+    .after1024 {
+      display: none;
+    }
+    
+    @media screen and (min-width: 1024px) {
+      .l  {
+        display: none;
+      }
+      .a1024{
+        display: block;
+        /* background-color: yellow; */
+        max-width: 1000px;
+        align-items: center;
+
+      }
+      .after1024 {
+        text-decoration: none;
+        display: flex;
+        position: relative;
+        right: 10px;
+        top: 60px;
+        font-size: 40px;
+        letter-spacing: 0;
+        /* background-color: yellow; */
+      }
+      .after1024 li {
+        line-height: 100px;
+        margin: 0 5px ;
+      }
+      ul {
+        align-items: center;
+      }
+      a {
+        text-decoration: none;
+        color: black;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="p"><img src="https://picsum.photos/200/200/?random=1"></div>
+    <div class="t">title</div>
+    <div class="l">
+      <ul class="testline">
+        <li class="line" ><a href="#"></a></li>
+        <li class="line" ><a href="#"></a></li>
+        <li class="line" ><a href="#"></a>
+        <ul class="hidd">
+          <li>測試</li>
+          <li>測試</li>
+          <li>測試</li>
+          <li>測試</li>
+          <li>測試</li>
+        </ul>
+        </li>
+      </ul>
+    </div>
+    <div calss="a1024">
+      <ul class="after1024">
+        <li><a href="#">超連結</a></li>
+        <li><a href="#">超連結</a></li>
+        <li><a href="#">超連結</a></li>
+        <li><a href="#">超連結</a></li>
+        <li><a href="#">超連結</a></li>
+      </ul>
+    </div>
+  </div>
+</body>
+</html>

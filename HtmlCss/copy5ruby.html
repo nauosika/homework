@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+    .container{
+      /* max-width: 1200px; */
+      height: 6000px;
+      margin: auto;
+      display: flex;
+      background-color: transparent;
+      position: relative;
+    }
+    .header{
+      background-color:white ;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: fixed;   
+      z-index: 10;
+    }
+    .header > img{
+      display: block;
+      text-align: center;
+      
+    }
+    .header_left {
+      text-decoration: none;
+      margin-left: 5em; 
+      position: relative;    
+    }
+    a{
+      text-decoration: none;
+    }
+    .header_right {      
+      /* text-decoration: none; */
+      /* position: absolute; */
+      right: 100px;
+      /* background-color: black;         */
+      background-color: blue;
+    }
+    
+    .hidd > li::after{
+      content: "";
+      height: 2px;
+      width: 30px;
+      display: block;
+      background-color: crimson;
+      margin: 10px auto;
+    }
+    
+    .header_right:hover .header_hidd {
+      display: block;
+      position: absolute;
+      top: 0;
+      left: 180px;
+      width: 90px;
+    }
+
+    .header_hidd {
+      position: absolute;
+      display: none;
+      background-color: white;
+      left: 80px;
+      font-size: 32px;
+    }
+    
+    
+    
+    h1{
+      display: inline;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <section id="s1"></section>
+    <div class="header">
+      <header>
+        <a class="header_left" href="copy5ruby.html">
+          <img src="https://picsum.photos/40/24/?random=1">
+          <h1>好難切的官網</h1>             
+        </a>
+        <a class="header_right" href="#s1" >
+          <ul class="hidd">
+            <li>
+              <a href="#" ></a>
+            </li>
+            <li>
+              <a href="#" ></a>
+            </li>
+            <li class="hidd_list">
+              <a href="#" ></a>
+                <ul>
+                  <li><a href="#">全方位訓練營</a></li>
+                  <li><a href="#">全方位訓練營</a></li>
+                  <li><a href="#">全方位訓練營</a></li>
+                  <li><a href="#">全方位訓練營</a></li>
+                  <li><a href="#">全方位訓練營</a></li>
+                </ul>  
+            </li>
+          </ul>
+        </a>
+        
+      </header>
+    </div>
+  </div>
+</body>
+</html>
